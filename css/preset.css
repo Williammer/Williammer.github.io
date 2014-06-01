@@ -1,0 +1,177 @@
+/*!
+* by zhangxinxu(.com) 2014
+* under MIT license
+*/
+
+/* 
+ * buttons
+*/
+.btn { display: inline-block; padding: .5em 1em; border: 0 none; border: 1px solid rgba(0,0,0,.25); border-radius: 0.3em; background-image: none; box-shadow: 0 1px rgba(0,0,0,.15), inset 0 1px rgba(255,255,255,.15); color: #fff; text-align: center; text-decoration: none; text-shadow: 1px 1px rgba(0,0,0,.1); font-size: 100%; font-family: inherit; font-weight: inherit; white-space: nowrap; -webkit-user-select: none; -moz-user-select: none; user-select: none; overflow: visible; cursor: pointer; }
+.btn:hover, .btn:focus { text-decoration: none; background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); }
+.btn:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
+.btn:active { box-shadow: 0 1px rgba(0,0,0,.2), inset 0 1px rgba(0,0,0,.05); outline: none; }
+
+.btn_navy { background-color: #001f3f; }
+.btn_blue { background-color: #0074d9; }
+.btn_aqua { background-color: #7fdbff; }
+.btn_teal { background-color: #39cccc; }
+.btn_olive { background-color: #3d9970; }
+.btn_green { background-color: #2ecc40; }
+.btn_lime { background-color: #01ff70; }
+.btn_yellow { background-color: #ffdc00; }
+.btn_orange { background-color: #ff851b; }
+.btn_red { background-color: #ff4136; }
+.btn_fuchsia { background-color: #f012be; }
+.btn_purple { background-color: #b10dc9; }
+.btn_maroon { background-color: #85144b; }
+.btn_white { background-color: #ffffff; }
+.btn_gray { background-color: #aaaaaa; }
+.btn_silver { background-color: #dddddd; }
+.btn_black { background-color: #111111; }
+
+.btn_white, .btn_silver { color: #111111;  text-shadow: none; }
+
+/*!**
+   colors.css v1.0
+   http://clrs.cc
+   @mrmrs
+   MIT License
+***/
+/*
+
+   SKINS
+   • Backgrounds
+   • Colors
+*/
+/* Backgrounds */
+.bg_navy { background-color: #001f3f; }
+.bg_blue { background-color: #0074d9; }
+.bg_aqua { background-color: #7fdbff; }
+.bg_teal { background-color: #39cccc; }
+.bg_olive { background-color: #3d9970; }
+.bg_green { background-color: #2ecc40; }
+.bg_lime { background-color: #01ff70; }
+.bg_yellow { background-color: #ffdc00; }
+.bg_orange { background-color: #ff851b; }
+.bg_red { background-color: #ff4136; }
+.bg_fuchsia { background-color: #f012be; }
+.bg_purple { background-color: #b10dc9; }
+.bg_maroon { background-color: #85144b; }
+.bg_white { background-color: #ffffff; }
+.bg_gray { background-color: #aaaaaa; }
+.bg_silver { background-color: #dddddd; }
+.bg_black { background-color: #111111; }
+/* Colors */
+.navy { color: #001f3f; }
+.blue { color: #0074d9; }
+.aqua { color: #7fdbff; }
+.teal { color: #39cccc; }
+.olive { color: #3d9970; }
+.green { color: #2ecc40; }
+.lime { color: #01ff70; }
+.yellow { color: #ffdc00; }
+.orange { color: #ff851b; }
+.red { color: #ff4136; }
+.fuchsia { color: #f012be; }
+.purple { color: #b10dc9; }
+.maroon { color: #85144b; }
+.white { color: #ffffff; }
+.silver { color: #dddddd; }
+.gray { color: #aaaaaa; }
+.black { color: #111111; }
+/* Prettier Links */
+a { color: #0074d9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* display */
+.dn { display: none; }
+.di { display: inline; }
+.db { display: block; }
+.dib { display: inline-block; } /* if the element is block level(eg. div, li), using 'inline-any' instead */
+
+/* font-style */
+.n { font-weight: normal; font-style: normal; }
+.b { font-weight: bold; }
+.i { font-style: italic; }
+/* text-align */
+.tc { text-align: center; }
+.tr { text-align: right; }
+.tl { text-align: left; }
+.tj { text-align: justify; }
+/* text-decoration */
+.tdl { text-decoration: underline; }
+.tdn, .tdn:hover, .tdn a:hover, a.tdl:hover { text-decoration: none; }
+/* letter-spacing */
+.lt-1 { letter-spacing: -1px; }
+.lt0 { letter-spacing: 0; }
+.lt1 { letter-spacing: 1px; }
+/* white-space */
+.nowrap { white-space: nowrap; }
+/* word-wrap */
+.bk { word-wrap: break-word; }
+/* vertical-align */
+.vm { vertical-align: middle; }
+.vtb { vertical-align: text-bottom; }
+.vb { vertical-align: bottom; }
+.vt { vertical-align: top; }
+.vn { vertical-align: -2px; }
+/* float */
+.l { float: left; }
+.r { float: right; }
+/* clear */
+.cl { clear: both; }
+/* position */
+.rel { position: relative; }
+.abs { position: absolute; }
+/*z-index*/
+.zx1 { z-index: 1; }
+.zx2 { z-index: 2; }
+/* cursor */
+.poi { cursor: pointer; }
+.def { cursor: default; }
+/* overflow */
+.ovh { overflow: hidden; }
+.ova { overflow: auto; }
+/* visibility */
+.vh { visibility: hidden; }
+.vv { visibility: visible; }
+/* zoom */
+.z { *zoom: 1; }
+
+
+/* ------------------- multiply CSS ------------------ */
+/* 块状元素水平居中 */
+.auto { margin-left: auto; margin-right: auto; }
+/* 清除浮 动*/
+.fix { *zoom: 1; }
+.fix:after { display: table; content: ''; clear: both; }
+/* 基于display: table-cell的自适应布局 */
+.cell { display: table-cell; *display: inline-block; width: 2000px; *width: auto; }
+/* 双栏自适应cell部分连续英文字符换行 */
+.cell_bk { display: table; width: 100%; table-layout: fixed; word-wrap: break-word; }
+/* 单行文字溢出虚点显 示*/
+.ell { text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+/* css3过渡动画效果 */
+.trans { 
+	-webkit-transition: all 0.3s; 	
+	        transition: all 0.3s; 
+}
+/* 大小不定元素垂直居中 */
+.dib_vm { display: inline-block; width: 0; height: 100%; vertical-align: middle; }
+/* 加载中背景图片 - 如果您使用该CSS小库，务必修改此图片地址 */
+.loading { background: url(http: //www.zhangxinxu.com/study/image/loading.gif) no-repeat center; }
+/* 无框文本框文本域 */
+.bd_none { border: 0; outline: none; }
+/* 绝对定位隐藏 */
+.abs_out { position: absolute; left: -999em; top: -999em; }
+.abs_clip { position: absolute; clip: rect(0 0 0 0); }
+/*inline-block与float等宽列表*/
+.inline_box { font-size: 1em; letter-spacing: -.25em; font-family: Arial; }
+.inline_two, .inline_three, .inline_four, .inline_five, .inline_six, .inline_any { display: inline-block; *display: inline; letter-spacing: 0; vertical-align: top; *zoom: 1; }
+.float_two, .float_three, .float_four, .float_five, .float_six { float: left; }
+.inline_two, .float_two { width: 49.9%; }
+.inline_three, .float_three { width: 33.3%; }
+.inline_four, .float_four { width: 24.9%; }
+.inline_five, .float_five { width: 19.9%; }
+.inline_six, .float_six { width: 16.6%; }
+.inline_fix { display: inline-block; width: 100%; height: 0; overflow: hidden; }

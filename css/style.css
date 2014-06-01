@@ -1,0 +1,38 @@
+body {margin:0; padding:0;}
+		#wrapper {width:700px; margin: 0 auto; text-align:center;}
+		.mod {position:relative; margin: 0 auto; text-align:center; z-index:0; min-height: 100px;}
+		.show_ad {position: fixed; top: 0; right: 0;}
+		.status {position: fixed; top: 0; left: 0;  border-spacing: 0; border-collapse: collapse; z-index:4; background:#FCFCFC; box-shadow:1px 1px 2px 1px #CCC;}
+		.status td{text-align: left; border:1px solid #F3F3F3; padding: 4px 10px; }
+		.ad {position:relative; width:500px; margin: 0 auto; height:100px; border:1px solid #AAA; color:#333; font-size:20px; line-height:100px; background:#F4F4F4; z-index:10;}
+		
+		.demo_ctrl {margin-top:150px; text-align:left; border:1px solid #AAA;}
+		
+		.ctrl_list {list-style:none;}
+		.ctrl_list li {}
+		.ctrl_list h4 {padding:0; margin:16px 0 4px; text-decoration:underline;}
+
+		.pad_height {width:0; height:2000px;}
+		.pos_val_panel {height: 0; opacity: 0; transition:all 0.3s ease; -webkit-transition:all 0.3s ease;}
+		.foldable, .closable, .pos_type {margin-right: 6px; vertical-align: 2px;}
+		
+		.show {display:block;}
+		.hide {display:none;}
+		.icon {width:32px; height:32px; cursor:pointer;}
+		.icon:hover {transition: all 0.5s ease; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease;}
+		.cls {background:transparent url(../images/close-icon.png) 0 0 no-repeat;}
+		.cls_corner {position:absolute; top:0; right:0;}
+		.cls:hover {transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2); }
+
+		.fold {background:transparent url(../images/collapse-icon.png) 0 0 no-repeat; }
+		.fold_corner {position:absolute; bottom:0; right:2px;}
+		.fold:hover {transform: translateY(-4px); -webkit-transform: translateY(-4px); -ms-transform: translateY(-4px);  }
+		.folded {height:32px;  font-size:0; color:transparent;}
+		.folded .fold {display:none; transform: rotate(180deg); -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);}
+		.folded:hover {background:#F1F1F1;}
+		.folded:hover .fold{display:block;}
+		.trans {transition: all 0.3s ease; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease;}
+
+		.timer {background:transparent url(../images/timer-icon2.png) 0 0 no-repeat; }
+		.timer_corner {position:absolute; top:0; left:0;}
+		.timer_panel {height:0; opacity:0; transition:all 0.3s ease; -webkit-transition:all 0.3s ease;}

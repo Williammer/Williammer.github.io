@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+    <link rel="shortcut icon" href="http://faviconist.com/icons/2d80fc7bd81d82517d22bc756293889a/favicon.ico" />
+    <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
+    <style>
+      html {background: #6c7989 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;}
+      body {padding: 0; margin: 0;}
+      .wrapper {width: 886px;}
+      header {width: 200px; zoom: 1.0; background: linear-gradient(#ddfbfc, #c6eafa); border-bottom: 1px solid #B2D2E1; border-radius: 4px; padding: 30px 20px; top: 4px;}
+      header h1 { margin-bottom: 5px; }
+      header h1 a { color: #494949; font-weight: bold; }
+      header h3 { margin-top: 20px; margin-bottom: 5px; }
+      header p.view { margin-bottom: 5px; }
+      header p.view a{font-size: 18px;}
+      header ul {
+        zoom: 0.7;
+        margin-top: 25px;
+      }
+      #main {background: linear-gradient(#fafafa, #dedede 700px); border-radius: 4px; padding: 30px 20px; width:600px;margin-top: 4px; margin-bottom: 50px;}
+      section p { margin-top: 10px; }
+      section h1 { margin-bottom: 15px; }
+      section h2 { margin-bottom: 10px; }
+      section h2 { margin-bottom: 10px; }
+      footer { bottom: 0; left: 0; width: 100%; background: #222; text-align: center;}
+      footer p { margin-bottom: 5px; color: #FFF;}
+      .half-width {
+        float: left;
+        width: 200px;
+        list-style: none;
+        padding: 5px;
+        margin: 7px;
+        margin-bottom: 10px;
+      }
+      .half-width h4 {
+        margin-bottom: 5px;
+      }
+      .half-width ul {
+        padding-left: 0;
+      }
+      .half-width ul li {
+        list-style: inside;
+        font-size: 15px;
+      }
+      .clear-fix {
+        clear: both;
+      }
+      .index_title {text-align: center;}
+      pre {background: transparent; padding: 0; border:none; color: #444; word-wrap: break-word;}
+      pre a{ color: #39c; font-size: 14px; }
+    </style>
+    <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="/">William's space</a></h1>
+        <!-- <p>Where's Corey now?</p> -->
+
+        <!-- <h3>The Goods</h3> -->
+        <p class="view"><a href="/projects.html">HeartWorks</a></p>
+        <p class="view"><a href="/posts.html">Blogs</a></p>
+
+        <!-- {% if page.repository_url %}
+          <h3>Project Info</h3>
+          <ul>
+            {% if page.zip_url %}
+              <li><a href="{{ page.zip_url }}">Download <strong>ZIP File</strong></a></li>
+            {% endif %}
+            {% if page.tar_url %}
+              <li><a href="{{ page.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+            {% endif %}
+            {% if page.gem_url %}
+              <li><a href="{{ page.gem_url }}">Download <strong>Rubygem</strong></a></li>
+            {% endif %}
+            {% if page.issue_url %}
+              <li><a href="{{ page.issue_url }}">Report<strong>An Issue</strong></a></li>
+            {% endif %}
+            {% if page.repository_url %}
+              <li><a href="{{ page.repository_url }}">Fork On <strong>GitHub</strong></a></li>
+            {% endif %}
+          </ul>
+        {% endif %}
+ -->
+        <h3>Follow Me On</h3>
+        <p class="view"><a href="https://github.com/Williammer" target="tab">GitHub</a></li>
+        
+      </header>
+
+      <section id="main">
+        {{ content }}
+      </section>
+      <footer>
+        <!-- <p>This is the site of Corey Donohoe</p> -->
+        <p><small>Hosted on <a href="http://pages.github.com">GitHub Pages</a> &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+  </body>
+</html>

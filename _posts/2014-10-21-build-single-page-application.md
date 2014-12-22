@@ -3,7 +3,6 @@ layout: post
 title: 构建单页Web应用
 excerpt: 单页应用是什么？
 ---
-====
 
 让我们先来看几个网站：
 

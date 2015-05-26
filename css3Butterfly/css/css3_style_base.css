@@ -1,4 +1,7 @@
 /* layout style */
+body {
+	background: lightblue;
+}
 #wrapper {
     width: 1349px;
     margin: 0 auto;

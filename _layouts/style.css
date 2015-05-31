@@ -1,0 +1,130 @@
+html {
+    background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Lora, Georgia, Baskerville, serif;
+}
+.wrapper {
+	min-width: 640px;
+	max-width: 1280px;
+}
+.wrapper header {
+	width: 100%;
+    zoom: 1.0;
+    background: linear-gradient(#ddfbfc, #c6eafa);
+    border-bottom: 1px solid #B2D2E1;
+    border-radius: 4px;
+    float:none;
+    position: static;
+}
+header h1 {
+    margin-bottom: 5px;
+}
+header h1 a {
+    color: #494949;
+    font-weight: bold;
+}
+header h3 {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+header p.view {
+    margin-bottom: 5px;
+}
+header p.view .github-logo:before {
+	content: '\f00a';
+}
+header p.view .github-logo {
+	font-size: 18px;
+	color: #666;
+	font: normal normal normal 16px/1 octicons;
+	display: inline-block;
+	text-decoration: none;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+header p.view a {
+	font-size: 16px;
+	color: #666;
+	font-weight: bold;
+}
+header ul {
+    zoom: 0.7;
+    margin-top: 25px;
+}
+#main {
+    background: linear-gradient(#fafafa, #dedede 700px);
+    border-radius: 4px;
+	width: 100%;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding: 0;
+	color: #505050;
+	float:none;
+    position: static;
+}
+section p {
+    margin-top: 10px;
+}
+section h1 {
+    margin-bottom: 15px;
+}
+section h2 {
+    margin-bottom: 10px;
+}
+section h2 {
+    margin-bottom: 10px;
+}
+.wrapper footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+footer p {
+    margin-bottom: 5px;
+    color: #505050;
+}
+.half-width {
+    float: left;
+    width: 200px;
+    list-style: none;
+    padding: 5px;
+    margin: 7px;
+    margin-bottom: 10px;
+}
+.half-width h4 {
+    margin-bottom: 5px;
+}
+.half-width ul {
+    padding-left: 0;
+}
+.half-width ul li {
+    list-style: inside;
+    font-size: 15px;
+}
+.clear-fix {
+    clear: both;
+}
+.index_title {
+    text-align: center;
+}
+pre {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #444;
+    word-wrap: break-word;
+}
+pre a {
+    color: #39c;
+    font-size: 14px;
+}

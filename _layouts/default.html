@@ -7,7 +7,6 @@
     <title>{{ page.title }}</title>
     <link rel="shortcut icon" href="http://faviconist.com/icons/2d80fc7bd81d82517d22bc756293889a/favicon.ico" />
     <link rel="stylesheet" href="https://github.com/themes/minimal/stylesheets/styles.css">
-    <link rel="stylesheet" href="https://github.com/Williammer/Williammer.github.io/blob/master/_layouts/style.css">
     <style type="text/css">
     html {
         background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABx0RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNXG14zYAAAAUdEVYdENyZWF0aW9uIFRpbWUAMy82LzEygrTcTAAAAFRJREFUSIljfPDggZRf5RIGGNjUHsNATz6jXmSL1Kb2GLiAX+USBnrymRgGGDCORgFmoNAXjEbBaBSMRsFoFIxGwWgUjEbBaBSMRsFoFIxGwWgUAABYNujumib3wAAAAABJRU5ErkJggg==') fixed;
@@ -20,8 +19,7 @@
     }
     
     .wrapper {
-        min-width: 640px;
-        max-width: 1280px;
+        width: 100%;
     }
     
     .wrapper header {
@@ -54,17 +52,16 @@
     
     header p.view .github-logo {
         background: transparent url("../images/github-logo.png") 0 0 no-repeat;
-        width: 30px;
-        height: 30px;
-        display: inline-block;
+        width: 32px;
+        height: 32px;
+        display: table-cell;
         vertical-align: middle;
-        text-indent: 34px;
+        text-indent: 36px;
     }
     
     header p.view a {
         font-size: 16px;
         color: #666;
-        font-weight: bold;
     }
     
     header ul {
@@ -73,15 +70,15 @@
     }
     
     #main {
-        background: linear-gradient(#fafafa, #dedede 700px);
+        background: #FFF;
         border-radius: 4px;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        padding: 0;
+        width: 960px;
+        margin: 30px auto 50px;
+        padding: 20px;
         color: #505050;
         float: none;
         position: static;
+        border: 1px solid #DDD;
     }
     
     section p {
@@ -155,7 +152,6 @@
         color: #39c;
         font-size: 14px;
     }
-    
     </style>
     <script src="https://github.com/themes/minimal/javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -164,34 +160,14 @@
 <body>
     <div class="wrapper">
         <header>
-            <h1><a href="/">William's Web Space</a></h1>
-            <p class="view"><a href="/projects.html">Works</a>
-            </p>
-            <p class="view"><a href="/posts.html">Blogs</a>
-            </p>
-            <!-- {% if page.repository_url %}
-          <h3>Project Info</h3>
-          <ul>
-            {% if page.zip_url %}
-              <li><a href="{{ page.zip_url }}">Download <strong>ZIP File</strong></a></li>
-            {% endif %}
-            {% if page.tar_url %}
-              <li><a href="{{ page.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-            {% endif %}
-            {% if page.gem_url %}
-              <li><a href="{{ page.gem_url }}">Download <strong>Rubygem</strong></a></li>
-            {% endif %}
-            {% if page.issue_url %}
-              <li><a href="{{ page.issue_url }}">Report<strong>An Issue</strong></a></li>
-            {% endif %}
-            {% if page.repository_url %}
-              <li><a href="{{ page.repository_url }}">Fork On <strong>GitHub</strong></a></li>
-            {% endif %}
-          </ul>
-        {% endif %}
--->
-            <p class="view"><a href="https://github.com/Williammer" target="tab"><span class="github-logo">GitHub</span></a></p> 
-            
+            <div class="head-wrapper">
+                <h1><a href="/">William's Web Space</a></h1>
+                <p class="view"><a href="/projects.html">Works</a>
+                </p>
+                <p class="view"><a href="/posts.html">Blogs</a>
+                </p>
+            </div>
+            <p class="view"><a href="https://github.com/Williammer" target="tab"><span class="github-logo">my&nbsp;&nbsp;GitHub</span></a></p>
         </header>
         <section id="main">
             {{ content }}

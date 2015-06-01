@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 构建单页Web应用
+title: 构建单页Web应用(转载)
 excerpt: 单页应用是什么？
 ---
 

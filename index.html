@@ -3,4 +3,23 @@ layout: default
 title: William's Web Space | blogs & works
 ---
 <h1 class="index_title">Welcome to William's space!!</h1>
+<h3 id="pandora">Pretty boring ha? How about a sexy dance?
+	<a id="dancer-invitor">check it out!</a>
+</h3>
 
+<script>
+	var pandoraSeduceTxt = document.getElementById("pandora");
+	var dancerInvitor = document.getElementById("dancer-invitor");
+
+	window.setTimeout(function(){
+		pandoraSeduceTxt.style.display = "block";
+	}, 5000);
+
+	dancerInvitor.onclick = function() {
+		var yellowImg = document.createElement("img");
+			yellowImg.className = "dancer";
+			yellowImg.src = "images/dancer.gif";
+
+		pandoraSeduceTxt.appendChild(yellowImg);
+	};
+</script>

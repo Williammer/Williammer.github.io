@@ -3,17 +3,27 @@ layout: default
 title: William's Web Space | blogs & works
 ---
 <h1 class="index_title">Welcome to William's space!!</h1>
-<h2 id="pandora">Boring welcome page? um... How about a sexy dance?
-	<a id="dancer-invitor">check here out!</a><br/>
+<h2 id="line1" class="pandora">Boring welcome page? 
+</h2>
+<br/>
+<h2 id="line2" class="pandora">um... How about a sexy dance?
+	<br/>
+	<a id="dancer-invitor">check here out!</a>
+	<br/>
 </h2>
 
 <script>
-	var pandoraSeduceTxt = document.getElementById("pandora");
+	var pandoraSeduceLine1 = document.getElementById("line1");
+	var pandoraSeduceLine2 = document.getElementById("line2");
 	var dancerInvitor = document.getElementById("dancer-invitor");
 
 	window.setTimeout(function(){
-		pandoraSeduceTxt.style.display = "block";
-	}, 7000);
+		pandoraSeduceLine1.style.display = "block";
+	}, 6000);
+
+	window.setTimeout(function(){
+		pandoraSeduceLine2.style.display = "block";
+	}, 10000);
 
 	dancerInvitor.onclick = function() {
 		var yellowImg = document.createElement("img");

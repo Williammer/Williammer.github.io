@@ -18,17 +18,20 @@ title: William's Web Space | blogs & works
 </h2>
 
 <script>
+
+(function(root){
 	var pandoraSeduceLine1 = document.getElementById("line1"),
 		pandoraSeduceLine2 = document.getElementById("line2"),
-		dancerInvitor = document.getElementById("dancer-invitor");
+		dancerInvitor = document.getElementById("dancer-invitor"),
+		waitTime = 5000;
 
-	window.setTimeout(function(){
+	root.setTimeout(function(){
 		pandoraSeduceLine1.style.display = "block";
-	}, 5000);
 
-	window.setTimeout(function(){
-		pandoraSeduceLine2.style.display = "block";
-	}, 10000);
+		root.setTimeout(function(){
+			pandoraSeduceLine2.style.display = "block";
+		}, waitTime);
+	}, waitTime);
 
 	dancerInvitor.onclick = function() {
 		var yellowImg = document.createElement("img");
@@ -37,4 +40,6 @@ title: William's Web Space | blogs & works
 
 		pandoraSeduceLine2.appendChild(yellowImg);
 	};
+})(window);
+
 </script>

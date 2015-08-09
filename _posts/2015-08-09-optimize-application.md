@@ -24,6 +24,7 @@ These are some measures that I found helpful while trying to enhance the memory 
 3. should remove eventListener and clear timer when not needed.
 4. should optimize the app with build tool, like gradle, grunt, etc.
 5. should add in-app cache with certain size.
+6. should properly clean up or dispose not-used object/array, or even DOM elements.
 
 ## Server-side:
 1. should have "limit/size" parameter from API to implement lazyload on Grid.

@@ -9,7 +9,9 @@ Therefore, we will need optimization to make our app survived on the low memory 
           
 # Investigate
 Normally, the major performance and memory consumers in our applications are requests of json files, images, etc, but each application should better have a specific memory analysis. The recommended way is to use profiler of Chrome devTool to find it out. There are many resources and tutorials online about how to use Chrome devTool to profile memory, but I think Google's official doc is always the best choice: https://developer.chrome.com/devtools/docs/javascript-memory-profiling.
+
 On PS4, there is an API called WM_devSettings.memoryInfo that can show memory usage information from console log, so just put this variable into console.log and place it to wherever you want it to be loaded in the application.
+
 On PS3, the Target Manager software can watch memory usage information. 
  
 # Suggestions

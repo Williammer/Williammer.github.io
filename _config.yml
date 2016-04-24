@@ -1,8 +1,7 @@
-destination: ./_site
-auto:        false
+destination: ./_build
 lsi:         false
 port: 4000
-pygments:    true
+highlighter: pygments
 markdown:    rdiscount
 permalink:   date
 rdiscount:

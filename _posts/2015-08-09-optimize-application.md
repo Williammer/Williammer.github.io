@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Optimize TV application
-excerpt: suggestions for tv app optimization
+excerpt: suggestions for web tv app optimization
+history: Apr 24th, 2016 (updated) / Aug 9th, 2015 (created)
 ---
 # Background
 We've all been through the painful experience of using an application that is slow and sometimes freeze or even crash. Not to consider the case of system level bugs or some careless yet easy to fix bugs like infinite loop, it is the memory or performance that cause it. Two constraints accounts for this issue: 1. our xdk applications contain large amount of resources and, 2. many devices we targeted doesn't has affluent capacity of memory for our applications.

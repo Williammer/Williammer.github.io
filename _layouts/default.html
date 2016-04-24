@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -15,9 +14,10 @@
     body {
         padding: 0;
         margin: 0;
-        font-family: Lora, Georgia, Baskerville, serif;
+        font-family: Baskerville, Lora, Georgia, serif;
         line-height: 1.58;
-        letter-spacing: -0.003em;
+        letter-spacing: 0.3px;
+        /*letter-spacing: -0.003em;*/
     }
     
     .wrapper {
@@ -81,6 +81,7 @@
         bottom: 0;
         text-align: right;
     }
+    
     .logo {
         width: 32px;
         height: 32px;
@@ -95,6 +96,10 @@
         background: transparent url("../images/linkedin-logo.png") 0 0 no-repeat;
     }
     
+    header p.view a:hover {
+        text-decoration: underline;
+    }
+
     header p.view a {
         font-size: 24px;
         color: #555;
@@ -106,6 +111,10 @@
         margin-top: 25px;
     }
     
+    #main article {
+        font-family: Lora, Georgia, serif;
+    }
+
     #main {
         background: #FFF;
         border-radius: 4px;
@@ -123,6 +132,7 @@
     
     section p {
         margin-top: 10px;
+        margin-bottom: 8px;
         font-size: 20px;
     }
     
@@ -144,19 +154,15 @@
         margin-top: 10px;
         font-size: 26px;
         margin-bottom: 10px;
-        font-style: italic;
     }
-    
+
     section h1 {
-        margin: 70px 0 15px;
+        margin: 60px 0 16px;
     }
     
     section h2 {
         margin-bottom: 10px;
-    }
-    
-    section h2 {
-        margin-bottom: 10px;
+        margin-top: 30px;
     }
     
     .half-width {
@@ -186,7 +192,12 @@
     }
     
     .index_title {
+        font-family: Baskerville;
         text-align: center;
+        width: 600px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e5e5e5;
     }
     
     pre {
@@ -200,6 +211,18 @@
     pre a {
         color: #39c;
         font-size: 14px;
+    }
+    
+    .selfy {
+        line-height: 1.6;
+        font-weight: normal;
+        font-size: 20px;
+        color: #303030;
+        margin: 0 auto;
+        text-align: left;
+        font-family: Baskerville;
+        max-width: 600px;
+        letter-spacing: 0.3px;
     }
     
     #dancer-invitor:hover {
@@ -231,9 +254,9 @@
     <div class="wrapper">
         <header>
             <div class="head-wrapper">
-                <p class="view"><a href="/posts.html">Blogs</a></p>
-                <a class="slogan" title="William He's Web Space" href="/"></a>
-                <p class="view"><a href="/projects.html">Works</a></p>
+                <p class="view"><a title="William's Blogs" href="/posts.html">Blogs</a></p>
+                <a class="slogan" title="About William He" href="/"></a>
+                <p class="view"><a title="William's Works" href="/projects.html">Works</a></p>
             </div>
         </header>
         <section id="main">
@@ -246,5 +269,4 @@
         </footer>
     </div>
 </body>
-
 </html>

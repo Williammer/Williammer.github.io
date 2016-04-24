@@ -1,5 +1,5 @@
 # Introduction
-William's private Github website to display blogs and works. 
+William's personal Github website for my blogs and works. 
 
 
 ## License

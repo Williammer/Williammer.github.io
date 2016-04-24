@@ -9,7 +9,7 @@ We've all been through the painful experience of using an application that is sl
 Therefore, we will need optimization to make our app survived on the low memory capacity devices and, make our app more pleasant to use on devices that have larger memory.
           
 # Investigate
-Normally, the major performance and memory consumers in our applications are requests of json files, images, etc, but each application should better have a specific memory analysis. The recommended way is to use profiler of Chrome devTool to find it out. There are many resources and tutorials online about how to use Chrome devTool to profile memory, but I think Google's official doc is always the best choice: https://developer.chrome.com/devtools/docs/javascript-memory-profiling.
+Normally, the major performance and memory consumers in our applications are requests of json files, images, etc, but each application should better have a specific memory analysis. The recommended way is to use Chrome devTool's Timeline to observe if there is memory leak and use the Profiler to target the cause of the leak. There are many resources and tutorials online about how to use Chrome devTool to profile memory, but I think Google's official doc is the best choice: https://developer.chrome.com/devtools/docs/javascript-memory-profiling.
 
 On PS4, there is an API called WM_devSettings.memoryInfo that can show memory usage information from console log, so just put this variable into console.log and place it to wherever you want it to be loaded in the application.
 
@@ -18,13 +18,17 @@ On PS3, the Target Manager software can watch memory usage information.
 # Suggestions
 These are some measures that I found helpful while trying to enhance the memory and performance in some XDK projects on Playstation, hope it can be helpful to developers who try to optimize their applications.
 
-## Client-side:
+## Client-side -- javasript memory management:
+1. should avoid unintended global variables.
+2. should properly clean up(by nulling) the references to not used closure variables, objects, arrays, especially when those string/array/objects have large size, such as Cache or large feeds of string or json, etc.
+3. should remove not needed DOM elements(with XDK's deinit() or parent.removeChild in general cases).
+4. should remove EventListener and clear timer when they are not needed.
+
+## Client-side - other measures:
 1. should try to use css sprite to reduce http request number of images.
 2. should implement lazyload for Grid.
-3. should remove eventListener and clear timer when not needed.
-4. should optimize the app with build tool, like gradle, grunt, etc.
-5. should add in-app cache with certain size.
-6. should properly clean up or dispose not-used object/array, or even DOM elements.
+3. should optimize the app file size with build tools, such as gulp, gradle, grunt, etc.
+4. adding object-based cache can improve application performance, but before those cache is cleared, there are some burdens on app's memory. So if we use object-based cache in app, we need to add certain size and certain expire date to it, and remember to clear it along with its references when it expired, otherwise it may lead to memory leak.
 
 ## Server-side:
 1. should have "limit/size" parameter from API to implement lazyload on Grid.
@@ -38,10 +42,11 @@ These are some measures that I found helpful while trying to enhance the memory 
 2. For PS4 that use webmaf 1.31 and above, it is able to change the browser memory by setting BrowserHeapSizeMB=VALUE in webmaf_setting.ini file. Default value for BrowserHeapSizeMB is around 160MB, and this value can be adjusted base on how much memory the app will need to support stream(it's a bit unclear how much exact memory value should we allocate to browser/video, since I don't know how to see the Video Memory usage information in PS4,  if anyone knows it plz let me know). Normally it is able to set it to 220 and the stream is not affected.
 3. For PS3, the BrowserHeapSizeMB and VideoPlayerSizeMB have altogether 128MB, we can set proper value to these two settings to balance the memory allocation in PS3.
 
-## More:
+## More resources:
 1. The book《High performance javaScript》has so many good suggestions for writing performance-friendly javaScript.
 2. The book《High performance web sites》and 《Even faster web sites》has more in-depth optimize suggestions for both client and server side. 
-3. This article covers everything about memory-friendly javaScript: http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript 
+3. This article illustrated javascript memory management in an in-depth and well-organized way: https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them 
+4. This article covers everything about memory-friendly javaScript: http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript 
 
 
 # Afterword

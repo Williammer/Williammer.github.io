@@ -22,7 +22,7 @@ It has those devTool common modules, and it's UI is quite concise. Like below:
 
 ![](https://raw.githubusercontent.com/Williammer/Williammer.github.io/master/images/20160425-shot1.PNG)
 
-However, since it's quite a different look from the Chrome DevTool, we may need a little bit of time to adjust to it. But I think it's worth such a small effort. :wink: 
+However, since it's quite a different look from the Chrome DevTool, we may need a little bit of time to adjust to it. But I think it's worth such a small effort. 
 
 Besides, it has an extensible structure and allows to add more modules in the form of Plugins. And because it is open-sourced and is quite actively developed/maintained, it will gets better.
 If you want to customize its modules, like remove certain default modules to reduce its weight, you can change its Server config.json, here are more details: [http://vorlonjs.com/documentation/#vorlonjs-server-advanced-topics](http://vorlonjs.com/documentation/#vorlonjs-server-advanced-topics)
@@ -37,9 +37,9 @@ It has integrated modernizr which enable us to see the device's support conditio
 
 This is my favorite feature of this tool, it's able to save us the time of re-launching the modified app on some devices such as Sony TV/BDP, LG, Playstation, etc. By clicking on the "Reload Client" button on the left sidebar of vorlon.js dashboard, we can escape from the tedious and sometimes time-consuming steps of exit the app -> back to Home -> then navigate to certain portal app or Url Loader - >relaunch the app.
 
-However, Samsung TV doesn't refresh it after reload, maybe it has sth to do with its sync mechanism. If anyone figure out a way to make it refresh on Samsung TV or other TV that doesn't refresh, please share the secret. :smile:
+However, Samsung TV doesn't refresh it after reload, maybe it has sth to do with its sync mechanism. If anyone figure out a way to make it refresh on Samsung TV or other TV that doesn't refresh, please share the secret.
 
 # A bit more
 There are some other good features of this tool such as "My Device" and "Unit test", you can check out its document to learn more.
 
-This tool is developed by some Microsoft guys, so I can feel that Microsoft does gets better and try to do some good things nowadays. :wink:
+This tool is developed by some Microsoft guys, so I can feel that Microsoft does gets better and try to do some good things nowadays. <img src='https://assets-cdn.github.com/images/icons/emoji/unicode/1f609.png' height='22' />

@@ -10,7 +10,7 @@ We've all been through the painful experience of using an application that is sl
 Therefore, we will need optimization to make our app survived on the low memory capacity devices and, make our app more pleasant to use on devices that have larger memory.
           
 # Investigate
-Normally, the major performance and memory consumers in our applications are requests of json files, images, etc, but each application should better have a specific memory analysis. The recommended way is to use Chrome devTool's Timeline to observe if there is memory leak and use the Profiler to target the cause of the leak. There are many resources and tutorials online about how to use Chrome devTool to profile memory, but I think Google's official doc is the best choice: https://developer.chrome.com/devtools/docs/javascript-memory-profiling.
+Normally, the major performance and memory consumers in our applications are requests of json files, images, etc, but each application should better have a specific memory analysis. The recommended way is to use Chrome devTool's Timeline to observe if there is memory leak and use the Profiler to target the cause of the leak. There are many resources and tutorials online about how to use Chrome devTool to profile memory, but I think Google's official doc is the best choice: [https://developer.chrome.com/devtools/docs/javascript-memory-profiling](https://developer.chrome.com/devtools/docs/javascript-memory-profiling).
 
 On PS4, there is an API called WM_devSettings.memoryInfo that can show memory usage information from console log, so just put this variable into console.log and place it to wherever you want it to be loaded in the application.
 
@@ -46,8 +46,8 @@ These are some measures that I found helpful while trying to enhance the memory 
 ## More resources:
 1. The book《High performance javaScript》has so many good suggestions for writing performance-friendly javaScript.
 2. The book《High performance web sites》and 《Even faster web sites》has more in-depth optimize suggestions for both client and server side. 
-3. This article illustrated javascript memory management in an in-depth and well-organized way: https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them 
-4. This article covers everything about memory-friendly javaScript: http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript 
+3. This article illustrated javascript memory management in an in-depth and well-organized way: [https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them](https://auth0.com/blog/2016/01/26/four-types-of-leaks-in-your-javascript-code-and-how-to-get-rid-of-them) 
+4. This article covers everything about memory-friendly javaScript: [http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript](http://www.smashingmagazine.com/2012/11/writing-fast-memory-efficient-javascript) 
 
 
 # Afterword

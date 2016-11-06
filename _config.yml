@@ -1,8 +1,6 @@
 destination: ./_build
-lsi:         false
+lsi: false
 port: 4000
-highlighter: pygments
-markdown:    rdiscount
-permalink:   date
-rdiscount:
-  extensions: [smart]
+highlighter: rouge
+markdown: kramdown
+permalink: date

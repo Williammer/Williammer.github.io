@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Optimize TV application
+title: ⭐ Optimize TV application
 excerpt: suggestions for web tv app optimization
 history: Apr 24th, 2016 (updated) / Aug 9th, 2015 (created)
 ---

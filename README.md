@@ -2,20 +2,20 @@ This is William He's personal website with work and blog.
 
 
 ## Setup [(refs)](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)
-1. Install ruby gem
+* Install ruby gem
 
 
-2. Install jekyll
+* Install jekyll
 ``` bash
 $ gem install jekyll bundler
 ```
 
-3. Install github-page
+* Install github-page
 ``` bash
 $ bundle install
 ```
 
-4. Run jekyll server
+* Run jekyll server
 ``` bash
 $ jekyll s
 ```
@@ -30,4 +30,4 @@ $ bundle update
 
 ## License
 	The MIT License (MIT)
-	Hosted with ❤️ by the Jekyll
+	Hosted by Jekyll
